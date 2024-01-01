@@ -8,3 +8,9 @@
 
 
 */
+// variable --Done
+// if else , loop , --Done
+// Methods (string, array, more) --in Progress
+
+let fruits = ["apple", "Banana", "Orange"];
+console.log(fruits);
