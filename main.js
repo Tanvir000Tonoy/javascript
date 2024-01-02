@@ -112,4 +112,13 @@ const Object = {
 */
 
 // Day 3
-console.log("Day three");
+// console.log("Day three");
+// object destructuring
+let band = {
+  bandName: "onumate",
+  famousSong: "Tomar jonno sob",
+};
+
+const { bandName, famousSong } = band;
+
+console.log(bandName, famousSong);
