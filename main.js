@@ -6,7 +6,6 @@
 | OLD ITEMS WILL BE SHOWN HERE 
 |____________________________
 
-*/
 
 // variable --Done
 // if else , loop , --Done
@@ -48,8 +47,9 @@ for (i = 0; i <= newArray.length - 1; i++) {
     console.log(newArray[i]);
   }
 }
+// day two
 
-//  i also now the push and pop methods , also shif , unshift methods lets try those things also
+//  i also know the push and pop methods , also shif , unshift methods lets try those things also
 
 let array = ["item1", "item2", "item3"];
 console.log(array);
@@ -109,3 +109,7 @@ const Object = {
   girlFriend: "none",
   age: 20,
 };
+*/
+
+// Day 3
+console.log("Day three");
