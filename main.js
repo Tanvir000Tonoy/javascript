@@ -6,11 +6,11 @@
 | OLD ITEMS WILL BE SHOWN HERE 
 |____________________________
 
+*/
 
 // variable --Done
 // if else , loop , --Done
 // Methods (string, array, more) --in Progress
-*/
 
 let fruits = ["apple", "Banana", "Orange"];
 console.log(fruits);
@@ -65,3 +65,47 @@ array.unshift("something"); // it adds elements at the begging or in 0 index by 
 console.log(array);
 
 // now the question is how can i rever the array ?
+// learning for in and for of loop for the array
+
+let newarray = ["item1", "item2"];
+for (item of newarray) {
+  console.log(item);
+}
+
+for (index in newArray) {
+  console.log(index);
+}
+// now lets talk about objects
+let tonoy = {
+  name: "Tanvir",
+  age: 20,
+  "higherst educational qualification": "hsc gpa 5",
+  year: "2024",
+};
+for (key in tonoy) {
+  console.log(`${key} : ${tonoy[key]}`);
+}
+
+// now lets take a challange
+let key1 = "objkey1";
+let key2 = "objkey2";
+
+let val1 = "value1";
+let val2 = "value2";
+let myObject = {};
+myObject[key1] = val1;
+myObject[key2] = val2;
+console.log(myObject);
+
+// or we can use computed properties
+let obj = {
+  [key1]: val1,
+  [key2]: val2,
+};
+console.log(obj);
+//  spread operation in object
+const Object = {
+  name: "tonoy",
+  girlFriend: "none",
+  age: 20,
+};
