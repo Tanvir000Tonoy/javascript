@@ -109,7 +109,6 @@ const Object = {
   girlFriend: "none",
   age: 20,
 };
-*/
 
 // Day 3
 // console.log("Day three");
@@ -122,3 +121,25 @@ let band = {
 const { bandName, famousSong } = band;
 
 console.log(bandName, famousSong);
+
+*/
+
+// DAY 4
+// basics of function
+// function addTwoNumber(x, y) {
+//   return x + y;
+// }
+// console.log(addTwoNumber(5, 20));
+
+// now function expression
+// let addTwoNumber = function (x, y) {
+// return x + y;
+// };
+
+// console.log(addTwoNumber(5, 20));
+
+// arrow function
+let addTwoNumber = (number1, number2) => {
+  return number1 + number2;
+};
+console.log(addTwoNumber(10, 110));
