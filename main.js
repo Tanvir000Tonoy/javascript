@@ -147,3 +147,19 @@ console.log(addTwoNumber(10, 110));
 let addThreeNumbers = (number1, number2, number3) =>
   number1 + number2 + number3;
 console.log(addThreeNumbers(10, 20, 200));
+
+// hoisting = উত্তোলন
+// lets say we have a function but some where we called the function before the diclaratioin
+fuck();
+
+function fuck() {
+  console.log("sorry sorry sorry !");
+}
+
+// you see its working
+
+fuck2(); //but this is not working we have to put the the call after the expression ;)
+
+let fuck2 = function () {
+  console.log("sorry sorry sorry !");
+};
