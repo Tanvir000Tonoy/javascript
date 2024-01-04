@@ -165,12 +165,13 @@ console.log(bandName, famousSong);
     
     */
 // rest paramiter and addtion of any number
-let add = function (...array) {
+function addmany(...x) {
+  let array = x;
   let total = 0;
-  for (i = 0; i <= array.length - 1; i++) {
-    console.log(array[i]);
-    total = total + array[i];
+  for (i = 0; i < array.length; i++) {
+    total = array[i] + total;
   }
-};
+  console.log(total);
+}
 
-console.log(add(1, 2, 3));
+addmany(1, 2, 4, 5, 6, 7, 10, 112, 88);
