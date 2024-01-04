@@ -122,44 +122,55 @@ const { bandName, famousSong } = band;
 
 console.log(bandName, famousSong);
 
-*/
 
 // DAY 4
 // basics of function
 // function addTwoNumber(x, y) {
-//   return x + y;
-// }
-// console.log(addTwoNumber(5, 20));
-
-// now function expression
-// let addTwoNumber = function (x, y) {
-// return x + y;
-// };
-
-// console.log(addTwoNumber(5, 20));
-
-// arrow function
-let addTwoNumber = (number1, number2) => {
-  return number1 + number2;
+  //   return x + y;
+  // }
+  // console.log(addTwoNumber(5, 20));
+  
+  // now function expression
+  // let addTwoNumber = function (x, y) {
+    // return x + y;
+    // };
+    
+    // console.log(addTwoNumber(5, 20));
+    
+    // arrow function
+    let addTwoNumber = (number1, number2) => {
+      return number1 + number2;
+    };
+    console.log(addTwoNumber(10, 110));
+    // new shortcut from
+    let addThreeNumbers = (number1, number2, number3) =>
+    number1 + number2 + number3;
+    console.log(addThreeNumbers(10, 20, 200));
+    
+    // hoisting = উত্তোলন
+    // lets say we have a function but some where we called the function before the diclaratioin
+    fuck();
+    
+    function fuck() {
+      console.log("sorry sorry sorry !");
+    }
+    
+    // you see its working (only works when its a function diclaration)
+    
+    fuck2(); //but this is not working we have to put the the call after the expression ;)
+    
+    let fuck2 = function () {
+      console.log("sorry sorry sorry !");
+    };
+    
+    */
+// rest paramiter and addtion of any number
+let add = function (...array) {
+  let total = 0;
+  for (i = 0; i <= array.length - 1; i++) {
+    console.log(array[i]);
+    total = total + array[i];
+  }
 };
-console.log(addTwoNumber(10, 110));
-// new shortcut from
-let addThreeNumbers = (number1, number2, number3) =>
-  number1 + number2 + number3;
-console.log(addThreeNumbers(10, 20, 200));
 
-// hoisting = উত্তোলন
-// lets say we have a function but some where we called the function before the diclaratioin
-fuck();
-
-function fuck() {
-  console.log("sorry sorry sorry !");
-}
-
-// you see its working
-
-fuck2(); //but this is not working we have to put the the call after the expression ;)
-
-let fuck2 = function () {
-  console.log("sorry sorry sorry !");
-};
+console.log(add(1, 2, 3));
