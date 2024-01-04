@@ -143,3 +143,7 @@ let addTwoNumber = (number1, number2) => {
   return number1 + number2;
 };
 console.log(addTwoNumber(10, 110));
+// new shortcut from
+let addThreeNumbers = (number1, number2, number3) =>
+  number1 + number2 + number3;
+console.log(addThreeNumbers(10, 20, 200));
