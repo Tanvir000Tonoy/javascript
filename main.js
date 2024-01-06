@@ -189,3 +189,10 @@ function fuckThemAll(number, index) {
 }
 
 // continue with map method next time ;0
+// map method is such a methods that takes every array elements and provieds or returns a new array
+let ourFunc = function (number) {
+  return number * number;
+};
+
+let result = notunArray.map(ourFunc);
+console.log(result);
