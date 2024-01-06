@@ -162,16 +162,28 @@ console.log(bandName, famousSong);
     let fuck2 = function () {
       console.log("sorry sorry sorry !");
     };
+    // day 5
+    // rest paramiter and addtion of any number
+    function addmany(...x) {
+      let array = x;
+      let total = 0;
+      for (i = 0; i < array.length; i++) {
+        total = array[i] + total;
+      }
+      console.log(total);
+    }
+    
+    addmany(1, 2, 4, 5, 6, 7, 10, 112, 88);
     
     */
-// rest paramiter and addtion of any number
-function addmany(...x) {
-  let array = x;
-  let total = 0;
-  for (i = 0; i < array.length; i++) {
-    total = array[i] + total;
-  }
-  console.log(total);
-}
 
-addmany(1, 2, 4, 5, 6, 7, 10, 112, 88);
+// day 6
+// important array methods
+// forEach;
+let notunArray = [10, 10, 100, 40, 124];
+notunArray.forEach(fuckThemAll);
+
+function fuckThemAll(number, index) {
+  console.log(number);
+  console.log(index);
+}
