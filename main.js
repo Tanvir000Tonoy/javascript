@@ -184,6 +184,8 @@ let notunArray = [10, 10, 100, 40, 124];
 notunArray.forEach(fuckThemAll);
 
 function fuckThemAll(number, index) {
-  console.log(number);
-  console.log(index);
+  // multiply by 2
+  console.log(number * 2);
 }
+
+// continue with map method next time ;0
