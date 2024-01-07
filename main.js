@@ -188,6 +188,7 @@ function fuckThemAll(number, index) {
   console.log(number * 2);
 }
 
+// day 7
 // continue with map method next time ;0
 // map method is such a methods that takes every array elements and provieds or returns a new array
 let ourFunc = function (number) {
@@ -196,3 +197,18 @@ let ourFunc = function (number) {
 
 let result = notunArray.map(ourFunc);
 console.log(result);
+
+// day 8
+// reduce method and filter method;
+
+let products = [
+  { name: "laptop", price: 120000 },
+  { name: "phone", price: 152000 },
+  { name: "computer", price: 99500 },
+];
+let arrowfunc = (accum, products) => {
+  return accum + products.price;
+};
+
+let total = products.reduce(arrowfunc, 0);
+console.log(total);
