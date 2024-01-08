@@ -175,45 +175,59 @@ console.log(bandName, famousSong);
     
     addmany(1, 2, 4, 5, 6, 7, 10, 112, 88);
     
+    
+    // day 6
+    // important array methods
+    // forEach;
+    let notunArray = [10, 10, 100, 40, 124];
+    notunArray.forEach(fuckThemAll);
+    
+    function fuckThemAll(number, index) {
+      // multiply by 2
+      console.log(number * 2);
+    }
+    
+    // day 7
+    // continue with map method next time ;0
+    // map method is such a methods that takes every array elements and provieds or returns a new array
+    let ourFunc = function (number) {
+      return number * number;
+    };
+    
+    let result = notunArray.map(ourFunc);
+    console.log(result);
+    
+    // day 8
+    // reduce method and filter method;
+    
+    let products = [
+      { name: "laptop", price: 120000 },
+      { name: "phone", price: 152000 },
+      { name: "computer", price: 99500 },
+    ];
+    let arrowfunc = (accum, products) => {
+      return accum + products.price;
+    };
+    
+    let total = products.reduce(arrowfunc, 0);
+    console.log(total);
+    
+    let items = ["fucker", "?", "fuck"];
+    for (item of items) {
+      console.log(item);
+    }
+    
+    // sort array method () /
+    let users = ["tanvir", "Tanvir", "tania", "ador", "aklima"];
+    
+    users.sort();
+    console.log(users);
+    
     */
 
-// day 6
-// important array methods
-// forEach;
-let notunArray = [10, 10, 100, 40, 124];
-notunArray.forEach(fuckThemAll);
-
-function fuckThemAll(number, index) {
-  // multiply by 2
-  console.log(number * 2);
-}
-
-// day 7
-// continue with map method next time ;0
-// map method is such a methods that takes every array elements and provieds or returns a new array
-let ourFunc = function (number) {
-  return number * number;
-};
-
-let result = notunArray.map(ourFunc);
-console.log(result);
-
-// day 8
-// reduce method and filter method;
-
-let products = [
-  { name: "laptop", price: 120000 },
-  { name: "phone", price: 152000 },
-  { name: "computer", price: 99500 },
-];
-let arrowfunc = (accum, products) => {
-  return accum + products.price;
-};
-
-let total = products.reduce(arrowfunc, 0);
-console.log(total);
-
-let items = ["fucker", "?", "fuck"];
-for (item of items) {
-  console.log(item);
-}
+// Day 9
+/*
+      today i will try to learn all the array methods at once and no mather what happends i will finish watching the js mastary full video
+      and its and order be serious tonoy :0 ...
+    
+    */
