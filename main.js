@@ -1,7 +1,7 @@
 // source :https://youtu.be/chx9Rs41W6g?si=bT53eKfOz_NUGo60
 // 1st january 2024 [Tanvir_Tonoy]
 
-/*
+|
 |
 | OLD ITEMS WILL BE SHOWN HERE 
 |____________________________
@@ -311,13 +311,12 @@ console.log(bandName, famousSong);
     
     
     ## new constructor 
-    */
-//  let ourArray = new Array(length).fill(fillWithWhat? , start_index , end_index);
+   //  let ourArray = new Array(length).fill(fillWithWhat? , start_index , end_index);
 // let ourArray = new Array(10).fill("name", 0, 5);
 // console.log(ourArray);
 
 // result :
-/*
+
 0: "name"
 ​
 1: "name"
@@ -363,7 +362,6 @@ console.log(present);
 for (number of numbers) {
   console.log(number);
 }
-*/
 
 // now we will learn what is maps okey ?
 const person = new Map();
