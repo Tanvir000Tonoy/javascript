@@ -231,3 +231,22 @@ console.log(bandName, famousSong);
       and its and order be serious tonoy :0 ...
     
     */
+const numbers = [1, 2, 3, 4, 5];
+// we have to find the some of all the number
+// paramiters -> accumulator  , next value
+let x = numbers.reduce((total, next) => {
+  return total + next;
+});
+
+console.log(x);
+
+const products = [
+  { id: 1, name: "laptop", price: 140000 },
+  { id: 2, name: "computer", price: 99500 },
+  { id: 3, name: "phone", price: 160000 },
+];
+
+let y = products.reduce((totalPrice, currentValue) => {
+  return totalPrice + currentValue.price;
+}, 0);
+console.log(y);
