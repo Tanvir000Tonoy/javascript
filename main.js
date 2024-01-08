@@ -250,3 +250,16 @@ let y = products.reduce((totalPrice, currentValue) => {
   return totalPrice + currentValue.price;
 }, 0);
 console.log(y);
+
+let sortArray1 = [10, 20, 30, 40, 100];
+
+let func = function (x, y) {
+  return x - y;
+};
+sortArray1.sort(func);
+console.log(sortArray1);
+
+let sortArray2 = ["tanvir", "tonoy", "adiba", "ador", "afifa", "Fahima"];
+
+sortArray2.sort();
+console.log(sortArray2);
