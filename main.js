@@ -369,3 +369,5 @@ person.set("firstName", "tanvir");
 person.set([1, 3, 4], "amar roll");
 console.log(person);
 */
+
+// Now learn the Maps Object (referance data type )//iterables
