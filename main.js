@@ -212,3 +212,8 @@ let arrowfunc = (accum, products) => {
 
 let total = products.reduce(arrowfunc, 0);
 console.log(total);
+
+let items = ["fucker", "?", "fuck"];
+for (item of items) {
+  console.log(item);
+}
