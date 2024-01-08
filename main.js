@@ -223,43 +223,150 @@ console.log(bandName, famousSong);
     users.sort();
     console.log(users);
     
-    */
-
-// Day 9
-/*
-      today i will try to learn all the array methods at once and no mather what happends i will finish watching the js mastary full video
-      and its and order be serious tonoy :0 ...
     
+    // Day 9
+    today i will try to learn all the array methods at once and no mather what happends i will finish watching the js mastary full video
+    and its and order be serious tonoy :0 ...
+    
+   const numbers = [1, 2, 3, 4, 5];
+   // we have to find the some of all the number
+   // paramiters -> accumulator  , next value
+   let x = numbers.reduce((total, next) => {
+     return total + next;
+    });
+    
+    console.log(x);
+    
+    const products = [
+      { id: 1, name: "laptop", price: 140000 },
+      { id: 2, name: "computer", price: 99500 },
+      { id: 3, name: "phone", price: 160000 },
+    ];
+    
+    let y = products.reduce((totalPrice, currentValue) => {
+      return totalPrice + currentValue.price;
+    }, 0);
+    console.log(y);
+    
+    let sortArray1 = [10, 20, 30, 40, 100];
+    
+    let func = function (x, y) {
+      return x - y;
+    };
+    sortArray1.sort(func);
+    console.log(sortArray1);
+    
+    let sortArray2 = ["tanvir", "tonoy", "adiba", "ador", "afifa", "Fahima"];
+    
+    sortArray2.sort();
+    console.log(sortArray2);
+    
+    const lowToHigh = products.slice(0).sort((a, b) => {
+      return a.price - b.price;
+    });
+    console.log(products);
+    console.log(lowToHigh);
+    
+    
+    ####find() method and all its actions . 
+    -> array method that helps us to find a particular item in array according to our callback function 
+    
+    const myArrayForFindMethod = ["one", "three", "four", "six", "lion"];
+    // console.log(myArrayForFindMethod[0].length === 3);
+    let x = function (a) {
+      return a.length === 3;
+    };
+    let y = myArrayForFindMethod.find(x);
+    
+    console.log(y);
+    
+    
+    const products = [
+      { id: 1, name: "laptop", price: 120000 },
+      { id: 2, name: "computer", price: 9500 },
+      { id: 3, name: "phone", price: 120000 },
+    ];
+    
+    let x = products.find((y) => {
+      return y.id == 3;
+    });
+    console.log(x);
+    
+    function moreThan30000(item) {
+      return item.price < 150000;
+    }
+    
+    let result = products.every(moreThan30000); // input a boolean
+    console.log(result);
+    
+    function atleastOne(item) {
+      return item.price > 100000;
+    }
+    
+    let resultOFSome = products.some(atleastOne);
+    console.log(resultOFSome);
+    
+    
+    now we will learn the fill method of array  
+    
+    
+    ## new constructor 
     */
-const numbers = [1, 2, 3, 4, 5];
-// we have to find the some of all the number
-// paramiters -> accumulator  , next value
-let x = numbers.reduce((total, next) => {
-  return total + next;
-});
+//  let ourArray = new Array(length).fill(fillWithWhat? , start_index , end_index);
+// let ourArray = new Array(10).fill("name", 0, 5);
+// console.log(ourArray);
 
-console.log(x);
+// result :
+/*
+0: "name"
+​
+1: "name"
+​
+2: "name"
+​
+3: "name"
+​
+4: "name"
+​
+length: 10
 
-const products = [
-  { id: 1, name: "laptop", price: 140000 },
-  { id: 2, name: "computer", price: 99500 },
-  { id: 3, name: "phone", price: 160000 },
-];
 
-let y = products.reduce((totalPrice, currentValue) => {
-  return totalPrice + currentValue.price;
-}, 0);
-console.log(y);
+// splice method
+// start ,delete, insert
 
-let sortArray1 = [10, 20, 30, 40, 100];
+let ourArray = ["item1", "item2", "itme3"];
+console.log(ourArray);
 
-let func = function (x, y) {
-  return x - y;
-};
-sortArray1.sort(func);
-console.log(sortArray1);
+// let custom = ourArray.splice(start, delete, );
+// ourArray.splice(0, 2, "tanvir");
 
-let sortArray2 = ["tanvir", "tonoy", "adiba", "ador", "afifa", "Fahima"];
+// insert and delete together;
+ourArray.splice(1, 2, "insert1", "insert2", "insert3");
+console.log(ourArray);
 
-sortArray2.sort();
-console.log(sortArray2);
+
+// now we will learn what is iterables
+// # strings
+// # array
+// # Sets
+// #Maps
+
+// string is array like object
+// sets ###### we will learn sets now )
+
+const numbers = new Set(); // sets doesnot have any index or order :)
+numbers.add("Tanvir");
+numbers.add("items");
+let present = numbers.has("");
+console.log(numbers);
+console.log(present);
+for (number of numbers) {
+  console.log(number);
+}
+*/
+
+// now we will learn what is maps okey ?
+const person = new Map();
+person.set("firstName", "tanvir");
+person.set([1, 3, 4], "amar roll");
+console.log(person);
