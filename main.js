@@ -373,3 +373,7 @@ console.log(person);
 // Now learn the Maps Object (referance data type )//iterables
 // Day 10 => Learn Maps
 console.log("ami mori nai :)");
+
+
+// day 11  
+console.log("learning c so besto asi :) ");
