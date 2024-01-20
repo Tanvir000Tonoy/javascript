@@ -379,18 +379,18 @@ console.log(person);
 
 // day 12 i have not learnt a single line in previous two days
 // learning maps
-const person = {
-  firstName: "Tanvir ",
-  age: 7,
-  1: "one",
-};
+// const person = {
+//   firstName: "Tanvir ",
+//   age: 7,
+//   1: "one",
+// };
 
-for (let key in person) {
+// for (let key in person) {
   // console.log(typeof key);
-}
+// }
 // now what is map . it also stores key value and pair ...
 
-const map = new Map(); // new map
+// const map = new Map(); // new map
 // console.log(map);
 // map.set("key", "value");
 // console.log(map);
@@ -399,6 +399,6 @@ const map = new Map(); // new map
 // destructureing
 
 
-function hello(){
-  hello();
-}
+// function hello(){
+//   hello();
+// }
