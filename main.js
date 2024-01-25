@@ -405,5 +405,9 @@ console.log(person);
 
 // re learn what is map and what is the main theme of all the previous topic related with javascript :( i have missed all the topics so kinda sad
 
+<<<<<<< Updated upstream
 // but i want to finish a particular chapter from physics 
 // i have began the process and one third of the chapter has been studied by me so little bit hope is on my heart
+=======
+// but i want to finish a particular chapter from physics ¸
+>>>>>>> Stashed changes
